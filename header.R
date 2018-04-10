@@ -4,7 +4,8 @@ pkgs <- c(
     "magrittr",
     "RMySQL",
     "DBI",
-    "xgboost"
+    "xgboost",
+    "openxlsx"
 )
 if(any(lapply(pkgs, require, character.only = TRUE) == 0)){
     stop("Failed to load one or many packages. Check warning messages.")
